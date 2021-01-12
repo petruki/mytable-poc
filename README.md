@@ -17,6 +17,7 @@ My Table App is a interactive app to verify table availablity
 - Thymeleaf
 - Shards.min
 - MongoDB
+- Mockito
 
 ### Platforms Used
 - Quality Gate: SonarCloud
