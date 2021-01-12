@@ -1,5 +1,7 @@
 package com.pj3275.mytable.model;
 
+import javax.validation.constraints.NotBlank;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -13,8 +15,10 @@ public class User {
 	@Id
 	private String id;
 
+	@NotBlank(message = "Name is mandatory")
     private String name;
     
+	@NotBlank(message = "Email is mandatory")
     private String email;
 
     public User() {}
